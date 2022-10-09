@@ -5,7 +5,8 @@ from typing import Type
 import pickle as pkl 
 import tensorflow as tf
 from vietokenizer.preprocess_load import download, model_save, vocab_save
-os.environ['TF_CPP_MIN_LOG_LEVEL']= '1'
+
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 def word_tokenizer(text: Type[str]): 
     text = ud.normalize('NFC', text)

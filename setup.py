@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-with open("README.md", 'r') as f: 
+with open("README.md", 'r', encoding= 'utf-8') as f: 
     long_description= f.read() 
 
 classifiers= [
@@ -14,7 +14,7 @@ classifiers= [
 setup(
     name= 'vietokenizer', 
     version= '1.0.1', 
-    description= 'Vietnamese Tokenizer package based on deeplearning method',
+    description= 'Vietnamese Tokenizer package based on deep learning method',
     long_description= long_description, 
     long_description_content_type= 'text/markdown',
     url= 'https://github.com/Nguyendat-bit/VieTokenizer', 

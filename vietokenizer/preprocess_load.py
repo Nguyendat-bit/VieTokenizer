@@ -24,12 +24,12 @@ def ensure_dir(dir):
 def download_model():
     if not ensure_dir(model_save): 
         print('=' * 10 + ' Install Pretrained ' + '=' * 10)
-        gdown.download_folder(model_url, output= model_save)
+        gdown.download(model_url, output= model_save + 'pretrained.h5', fuzzy= True)
 
 def download_vocab():
     if not ensure_dir(vocab_save): 
         print('=' * 10 + ' Install Vocab ' + '=' * 10)
-        gdown.download_folder(vocab_url, output= vocab_save)
+        gdown.download(vocab_url, output= vocab_save + 'word_index.pkl', fuzzy= True)
 
 def download():
     download_model()
