@@ -1,5 +1,6 @@
 # VieTokenizer
-This is a new package that supports Vietnamese word segmentation based on deep learning methods. The model architecture we use is a simple bi-lstm network trained on a pre-labeled dataset. For example, the training set: "Tôi tên là Nguyễn Tiến Đạt" and the test set: "Tôi tên là Nguyễn_Tiến_Đạt". The model will predict if serial word is 1 and non-serial is 0, for example, "Tôi tên là Nguyễn Tiến Đạt" will be equivalent to a sequence of numbers with both zero and one being [0, 0, 0, 0, 1, 1]. 
+
+This model architecture that we use is a simple bi-lstm network trained by unsupervised learning on a large pre-segmented dataset. The model will predict if serial word is 1 and non-serial is 0, for example, "Tôi tên là Nguyễn Tiến Đạt" will be equivalent to a sequence of numbers with both zero and one being [0, 0, 0, 0, 1, 1]. 
 
 ## Installation 🎉
 - This repository is tested on python 3.7+ and Tensorflow 2.8+
