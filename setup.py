@@ -13,7 +13,7 @@ classifiers= [
 
 setup(
     name= 'vietokenizer', 
-    version= '1.0.2', 
+    version= '1.0.3', 
     description= 'Vietnamese Tokenizer package based on deep learning method',
     long_description= long_description, 
     long_description_content_type= 'text/markdown',
