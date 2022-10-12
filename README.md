@@ -19,6 +19,8 @@ pip install -e .
 >>> tokenizer= vietokenizer.vntokenizer()
 >>> tokenizer('Tôi tên là Nguyễn Tiến Đạt, hiện là sinh viên Đại học CN GTVT tại Hà Nội.')
 'Tôi tên là Nguyễn_Tiến_Đạt , hiện là sinh_viên Đại_học CN GTVT tại Hà_Nội .'
+>>> tokenizer('Kim loại nặng thường được định nghĩa là kim loại có khối lượng riêng, khối lượng nguyên tử hoặc số hiệu nguyên tử lớn.')
+'Kim_loại nặng thường được định_nghĩa là kim_loại có khối_lượng riêng , khối_lượng nguyên_tử hoặc số_hiệu nguyên_tử lớn .'
 ```
 
 ## License
